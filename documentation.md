@@ -14,7 +14,7 @@ Predicted Response components:
 - Headers:
   - Content-Type: text/html
 - Body: HTML page with navigation links to other pages
-
+- 
 #### Step 2
 In your browser open the chrome dev tools, navigate to [http://localhost:5000] and make a GET request for the Home Page (type "/" into the URL after 5000 and hit "enter").
 Explore the "network" tab and find where you can compare your predicted request/response components to the actual components.
