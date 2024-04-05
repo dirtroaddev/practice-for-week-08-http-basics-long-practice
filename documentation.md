@@ -34,28 +34,29 @@ website. Move on to the next request/response documentation.
 ### Ask for a page that doesn't exist
 
 Request components:
-- Method:
-- URL:
-- Headers:
-- Body:
+- Method: GET
+- URL: http://localhost:5000/trafficstop
+- Headers: aCCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+- Body: HTML page with 404 not found error
 
 Response components:
-- Status code:
-- Headers: 
-- Body:
+- Status code: 404 Not Found
+- Headers: Content-Type: text/html; charset=utf-8
+- Body: None
 
 ### Ask for the products list page
 
 Request components:
-- Method:
-- URL:
-- Headers:
-- Body:
+- Method: GET
+- URL: http://localhost:5000/products
+- Headers: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+- Body: HTML page with a list of products
 
 Response components:
-- Status code: 
-- Headers:
-- Body: 
+- Status code: 200 OK
+- Headers: Content-Type:text/html; charset=utf-8
+
+- Body: None
 
 ### Ask for the product detail page
 
@@ -70,28 +71,28 @@ Here's an example product on the server:
 | categories  | "beauty", "electronics"                                    |
 
 Request components:
-- Method:
-- URL: 
-- Headers: 
-- Body: 
+- Method: GET
+- URL: http://localhost:5000/products/1
+- Headers: Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+- Body: HTML page describing the product
 
 Response components:
-- Status code: 
-- Headers:
-- Body: 
+- Status code: 200 OK
+- Headers: Content-Type:text/html; charset=utf-8
+- Body: None
 
 ### Ask for the create new product page
 
 Request components:
-- Method:
-- URL:
-- Headers: 
-- Body: 
+- Method: GET
+- URL: http://localhost:5000/products/new
+- Headers: Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application
+- Body: HTML form page
 
 Response components:
-- Status code: 
-- Headers: 
-- Body: 
+- Status code: 200 OK
+- Headers: Content-Type:text/html; charset=utf-8
+- Body: None
 
 ### Submit a new product
 
